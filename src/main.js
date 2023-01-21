@@ -4,13 +4,7 @@ const bet = {
     R_EURO: 0.013,
    
 }
-// логика конвертации
-function converter (rub,current) {
-    if(!bet[current]) {
-        return console.error('ошибка');
-    }
-    return rub * bet[converter]
-}
+
 // выбор элемента
 const valueInput = document.querySelector('.converter__input');
 const selectUsdOrEuro = document.querySelector('.converter__currency-selector');
@@ -29,7 +23,8 @@ Button.addEventListener(('click'), (event) => {
         outputMessage.textContent = valueInput.value / bet.R_USD + '₽'
     }
     else if (selectUsdOrEuro.value == 'EURO_R') {
-        outputMessage.textContent = valueInput.value / bet.R_EURO + '₽'
+        outputMessage.textContent = valueInput.value / bet.R_USD + '₽'
+        
     }
 })
 
