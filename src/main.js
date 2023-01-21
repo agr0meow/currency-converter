@@ -23,7 +23,7 @@ Button.addEventListener(('click'), (event) => {
         outputMessage.textContent = valueInput.value / bet.R_USD + '₽'
     }
     else if (selectUsdOrEuro.value == 'EURO_R') {
-        outputMessage.textContent = valueInput.value / bet.R_USD + '₽'
+        outputMessage.textContent = valueInput.value / bet.R_EURO + '₽'
         
     }
 })
