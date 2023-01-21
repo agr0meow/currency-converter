@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+.converter {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    background-color:#b5b3b3;
+    border-radius: 24px;
+}
+
+
+.converter__header h2 {
+    text-align: center;
+    color: #7285ff;
+}
+.converter__button {
+    margin-top: 5px;
+    width: 200px;
+    border-radius: 20px;
+    border: 1px;
+    cursor:pointer;
+    
+}
+.converter__button:active {
+    background-color: darkgray;
+}
